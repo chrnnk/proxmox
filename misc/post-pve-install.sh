@@ -158,8 +158,8 @@ EOF
   
   if systemctl is-active --quiet pve-ha-lrm; then
     CHOICE=$(whiptail --backtitle "Proxmox VE Helper Scripts" --title "HIGH AVAILABILITY" --menu "If you plan to utilize a single node instead of a clustered environment, you can disable unnecessary high availability (HA) services, thus reclaiming system resources.\n\nIf HA becomes necessary at a later stage, the services can be re-enabled.\n\nDisable high availability?" 18 58 2 \
-      "yes" " " \
-      "no" " " 3>&2 2>&1 1>&3)
+      "no" " " \
+      "yes" " " 3>&2 2>&1 1>&3)
     case $CHOICE in
     yes)
       msg_info "Disabling high availability"
