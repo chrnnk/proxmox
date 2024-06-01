@@ -3,7 +3,9 @@
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+# https://github.com/chrnnk/proxmox/raw/main/LICENSE
+
+# bash -c "$(wget -qLO - https://github.com/chrnnk/proxmox/raw/main/misc/post-pve-install.sh)"
 
 header_info() {
   clear
