@@ -3,18 +3,18 @@
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
-# https://github.com/chrnnk/proxmox/raw/main/LICENSE
+# https://github.com/tteck/Proxmox/raw/main/LICENSE
 
-# bash -c "$(wget -qLO - https://github.com/chrnnk/proxmox/raw/main/misc/post-pve-install.sh)"
+# bash -c "$(wget -qLO - https://github.com/chrnnk/linux/raw/main/proxmox/post-pve-install.sh)"
 
 header_info() {
   clear
   cat <<"EOF"
-        __                      __   _                                                     __         _              __          __   __
- ____  / /   ____  ___   ___   / /__( )  ___        ___  _  __ ___         ___  ___   ___ / /_       (_)  ___   ___ / /_ ___ _  / /  / /
-/ __/ / _ \ / __/ / _ \ / _ \ /  '_/|/  (_-<       / _ \| |/ // -_)       / _ \/ _ \ (_-</ __/      / /  / _ \ (_-</ __// _ `/ / /  / / 
-\__/ /_//_//_/   /_//_//_//_//_/\_\    /___/      / .__/|___/ \__/       / .__/\___//___/\__/      /_/  /_//_//___/\__/ \_,_/ /_/  /_/  
-                                                 /_/                    /_/                                                             
+             ____ _    ________   ____             __     ____           __        ____
+            / __ \ |  / / ____/  / __ \____  _____/ /_   /  _/___  _____/ /_____ _/ / /
+           / /_/ / | / / __/    / /_/ / __ \/ ___/ __/   / // __ \/ ___/ __/ __ `/ / /
+          / ____/| |/ / /___   / ____/ /_/ (__  ) /_   _/ // / / (__  ) /_/ /_/ / / /
+chrnnk's /_/     |___/_____/  /_/    \____/____/\__/  /___/_/ /_/____/\__/\__,_/_/_/
 
 EOF
 }
@@ -116,8 +116,8 @@ EOF
       ;;
     no)
       msg_error "Selected no to Correcting 'ceph package repositories'"
-    ;;
-  esac
+      ;;
+    esac
 
   if [[ ! -f /etc/apt/apt.conf.d/no-nag-script ]]; then
     CHOICE=$(whiptail --backtitle "Proxmox VE Helper Scripts" --title "SUBSCRIPTION NAG" --menu "This will disable the nag message reminding you to purchase a subscription every time you log in to the web interface.\n \nDisable subscription nag?" 14 58 2 \
