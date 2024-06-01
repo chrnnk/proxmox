@@ -1,0 +1,1 @@
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAhZIBKNaZ/New9t0e4GqmejO8vRVlqhRjOLbuj87449 nick@chrnnk.tv" >> /root/.ssh/authorized_keys 
