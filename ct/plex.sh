@@ -5,6 +5,8 @@ source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build
 # License: MIT
 # https://github.com/tteck/Proxmox/raw/main/LICENSE
 
+# bash -c "$(wget -qLO - https://github.com/chrnnk/Proxmox/raw/main/ct/plex.sh)"
+
 function header_info {
 clear
 cat <<"EOF"
