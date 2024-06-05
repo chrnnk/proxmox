@@ -43,7 +43,7 @@ function default_settings() {
   GATE=""
   APT_CACHER=""
   APT_CACHER_IP=""
-  DISABLEIP6="yes"
+  DISABLEIP6=""
   MTU=""
   SD=""
   NS=""
