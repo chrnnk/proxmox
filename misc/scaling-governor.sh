@@ -4,6 +4,8 @@
 # Author: tteck (tteckster)
 # License: MIT
 # https://github.com/tteck/Proxmox/raw/main/LICENSE
+
+# bash -c "$(wget -qLO - https://github.com/chrnnk/proxmox/raw/main/misc/scaling-governor.sh)"
 set -e
 header_info() {
 clear
